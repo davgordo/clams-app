@@ -6,8 +6,11 @@ COPY . .
 # install dependencies
 RUN yarn
 
-# build the project.
+# build project
 RUN yarn build
 
-# run the app
+# expose web server
+EXPOSE 5173
+
+# run app
 CMD ["yarn", "dev"]
