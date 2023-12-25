@@ -12,7 +12,7 @@ RUN yarn
 RUN yarn build
 
 # allow random uid
-RUN chmod -R g+rx .
+RUN chmod -R g+rwx .
 
 # expose web server
 EXPOSE 5173
